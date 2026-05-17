@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS - Prompt creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <h1>Comic storyteller - Prompt creator</h1>
+    </header>
+
+    <main>
+        <div id="home">
+            <button id="scenario_cr">Scenario creation <i class="fa-solid fa-book"></i></button>
+            <button id="character_cr">Character creation <i class="fa-solid fa-person"></i></button>
+            <button id="constraint_cr">Constraint creation <i class="fa-solid fa-ban"></i></button>
+            <button id="bonus_cr">Bonus creation <i class="fa-solid fa-star"></i></button>
+            <button id="emotional-goal_cr">Emotional goal creation <i class="fa-solid fa-face-grin-wink"></i></button>
+            <button id="twist_cr">Twist creation <i class="fa-solid fa-s"></i></button>
+        </div>
+
+        <div id="scenario" class="menu" style="display: none;">
+            <div class="menu_hd"><h2>SCENARIO</h2> <button class="back"><i class="fa-solid fa-arrow-left"></i></button></div>
+
+            <form action="" id="scenario_form">
+                <label for="difficulty">Difficulty</label>
+                <select name="difficulty" id="difficulty">
+                    <option value="1">Easy</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hard</option>
+                </select>
+
+                <label for="scenario_title">Title</label>
+                <input name="scenario_title" type="text" id="scenario_title" placeholder="Scenario title">
+
+                <label for="scenario_setup">Scenario</label>
+                <textarea name="scenario_setup" id="scenario_setup" placeholder="Scenario..."></textarea>
+
+                <div>
+                    <input type="checkbox" name="genre" class="genre"> Comedy
+                    <input type="checkbox" name="genre" class="genre"> Drama
+                    <input type="checkbox" name="genre" class="genre"> Horror
+                </div>
+
+                <label>Min pages</label>
+                <input type="number" id="page_min">
+
+                <label>Max pages</label>
+                <input type="number" id="page_max">
+
+                <label>Min characters</label>
+                <input type="number" id="char_min">
+
+                <label>Max characters</label>
+                <input type="number" id="char_max">
+
+                <button type="submit">Create scenario</button>
+            </form>
+        </div>
+        
+        <div id="character" class="menu" style="display: none;">
+            <div class="menu_hd"><h2>CHARACTER</h2> <button class="back"><i class="fa-solid fa-arrow-left"></i></button></div>
+        </div>
+        
+        <div id="constraint" class="menu" style="display: none;">
+            <div class="menu_hd"><h2>CONSTRAINT</h2> <button class="back"><i class="fa-solid fa-arrow-left"></i></button></div>
+        </div>
+
+        <div id="bonus" class="menu" style="display: none;">
+            <div class="menu_hd"><h2>BONUS</h2> <button class="back"><i class="fa-solid fa-arrow-left"></i></button></div>
+        </div>
+
+        <div id="emotional" class="menu" style="display: none;">
+            <div class="menu_hd"><h2>EMOTIONAL GOAL</h2> <button class="back"><i class="fa-solid fa-arrow-left"></i></button></div>
+        </div>
+
+        <div id="twist" class="menu" style="display: none;">
+            <div class="menu_hd"><h2>TWIST</h2> <button class="back"><i class="fa-solid fa-arrow-left"></i></button></div>
+        </div>
+    </main>
+
+    <img id="silly_me" src="public/Mmmh.png">
+
+    <script src="script.js"></script>
+</body>
+</html>
