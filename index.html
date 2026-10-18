@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="root">
-        <button id="navbutton"><i class="fa-solid fa-bars"></i></button>
+        <button id="navbutton" onclick="onOff()"><i class="fa-solid fa-bars"></i></button>
         <nav id="main-nav" class="slide-in-left">
             <ul>
                 <li><button class="navpagebutton" onclick="setContent('home')">Home</button></li>
@@ -20,12 +20,11 @@
             </ul>
             <button id="darkmode"><i class="fa-solid fa-moon"></i></button>
         </nav>
-        <!-- <div id="main-page"></div> -->
-        <object id="page-content" type="text/html" data="/pages/home.html"></object>
+        <div id="page-content"></div>
     </div>
     
-    <!-- <script src="/src/script/router.js"></script> -->
     <script src="/src/script/contentShow.js"></script>
+    <script src="/src/script/game.js"></script>
     <script src="/src/script/sideNav.js"></script>
 </body>
 </html>
