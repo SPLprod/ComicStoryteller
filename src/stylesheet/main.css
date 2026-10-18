@@ -4,7 +4,6 @@
 
 #root {
     display: flex;
-    gap: 8px;
     min-height: 100vh;
     max-height: 100vh;
 }
@@ -32,18 +31,6 @@
     padding-top: 10vh;
     background-color: lightgrey;
     justify-content: center;
-    animation: slide-in-left 450ms both;
-}
-
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 #main-nav ul {
@@ -76,4 +63,28 @@
 #page-content {
     width: stretch;
     padding: 5vh 2.5vw;
+    background: radial-gradient(circle,rgba(219, 219, 219, 1) 0%, rgba(176, 176, 176, 1) 71%);
+}
+
+/* ============ HOME ============ */
+
+#game-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    gap: 1rem;
+}
+
+#rndm-txt {
+    text-align: center;
+}
+
+#game-title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.game-mode {
+    font-size: 1rem;
 }
